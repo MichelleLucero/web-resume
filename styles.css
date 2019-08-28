@@ -1,0 +1,82 @@
+
+
+
+body{
+	padding: 0px;
+	margin: 0px;
+	font-family:'Open Sans', sans-serif;
+	
+}
+
+#header-image{
+	height: 100vh;
+	width: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+
+.header{
+	position: relative;
+}
+
+.header-text{
+	display: inline;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	font-size: 36px;
+	color: white;
+	width: 100%; /*david edit*/
+	text-align: center; /*david edit*/
+	font-size: calc(12px + 6 * ((100vw - 320px) / 600));
+}
+
+/*david edit*/
+.header-text h1 {
+	font-size: 4em;
+}
+
+
+.container{
+	/*isplay: grid;
+	place-items: center;*/
+	position: relative;
+	margin: auto;
+	width: 100%;
+	max-width: 810px;
+
+}
+
+.container h1,h3{
+	text-align: center;
+}
+
+.container h1, h2, h3{
+	font-weight: normal;
+}
+
+=
+
+.profile-content, hr{
+	display: grid;
+	grid-template-columns:repeat(auto-fill, minmax(220px, 1fr));
+ 	grid-gap: 15px;
+ 	padding: 20px;
+
+
+
+}
+
+.profile-image {
+	text-align: center;
+}
+
+.profile-image img{
+	/*max-width: 50%;*/
+	border-radius: 50%; 
+	margin: auto;
+	width: 240px;
+}
+
+/*@media screen and (min-width: 817px)*/
