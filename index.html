@@ -10,23 +10,42 @@
 		<link rel="stylesheet" href="./styles.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		
-
 	</head>
 	<body>
 
-		<div class="header">	
+		<div id="header">	
 			<img id="header-image" src="./images/mountain.jpg" alt="image">
 			<div class="header-text">
 				<h1>Michelle Lucero</h1>
 			</div>
 		</div>
+		<!-- end of header -->
+		<div class="m1 menu">
+			<div id="menu-center">
+				<ul>
+					<li>
+						<a class="active" href="#profile">Profile</a>
+					</li>
+					<li>
+						<a href="#experiences">Experiences</a>
+					</li>
+					<li>
+						<a href="#abilities">Abilities</a>
+					</li>
+					<li>
+						<a href="#projects">Projects</a>
+					</li>
+					<li>
+						<a href="#contact">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</div>
 
-		<!-- CSS GRID -->
-		<div class="container">
+		<div id="profile" class="section">
+			<div class="container">
 
-			<div class="profile">
-
-				<h1>PROFILE</h1>
+				<h1>Profile</h1>
 				<h2>I'm a blank</h2>
 				<hr>
 				<br>
@@ -58,10 +77,12 @@
 						<p>NYC</p>
 					</div>
 				</div>
-
 			</div>
-
-			<div class="experiences">
+			<!-- end of profile -->
+		</div>
+		<!-- end of container -->
+		<div id="experiences" class="section">
+			<div class="container">
 				<h1>Experiences</h1>
 				<hr>
 				<h3>Education</h3>
@@ -89,8 +110,11 @@
 						</p>
 					</div>
 			</div>
-
-			<div class="abilities">
+			<!-- end of experiences -->
+		</div>
+		<!-- end of container -->
+		<div id="abilities" class="section">
+			<div class="container">
 				<h1>Abilities</h1>
 				<hr>
 				<h3>Skills</h3>
@@ -216,15 +240,20 @@
 					</li>
 				</ul>
 			</div>
-
-			<div class="projects">
+			<!-- end of abilities -->
+		</div>
+		<!-- end of container -->
+		<div id="projects" class="section">
+			<div class="container">
 				<h1>Projects</h1>
 				<hr>
 				<p>N/A</p>
-				
 			</div>
-
-			<div class="contact">
+			<!-- end of projects -->
+		</div>
+		<!-- end of container -->
+		<div id="contact" class="section">
+			<div class="container">
 				<h1>Contact</h1>
 				<hr>
 				<div class="contact-info">
@@ -236,14 +265,14 @@
 							</a>
 						</li>
 						<li>
-							<a href="https://www.instagram.com/squirpy/">
+							<a href="https://www.instagram.com/squirpy/" target="_blank">
 								<span class="fa fa-instagram" style="font-size: 75px; color:#fb3958;">
 								</span>
 							</a>
 						</li>
 
 						<li>
-							<a href="https://github.com/MichelleLucero">
+							<a href="https://github.com/MichelleLucero" target="_blank">
 								<span class="fa fa-github-alt" style="font-size: 75px; color: #211F1F;">
 								</span>
 							</a>
@@ -251,10 +280,13 @@
 					</ul>
 				</div>
 			</div>
-
+			<!-- end of contact -->
 		</div>
+		<!-- end of container -->
 
+		<script type="text/javascript" src="./script.js"></script>
 	</body>
+
 </html>
 
 

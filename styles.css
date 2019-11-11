@@ -3,9 +3,11 @@
 
 body{
 	margin: 0px;
-	font-family:'Open Sans', sans-serif;
+	font-family:'Open Sans', sans-serif;	
+}
 
-	
+body,html {
+	scroll-behavior: smooth;
 }
 
 #header-image{
@@ -15,7 +17,7 @@ body{
 	object-position: center;
 }
 
-.header{
+#header{
 	position: relative;
 }
 
@@ -37,6 +39,52 @@ body{
 	font-size: 4em;
 }
 
+/*navbar*/
+
+.menu {
+  width: 100px;
+  height: 300px;
+  position: fixed;
+  background-color: #003943;
+  float: right;
+  top: 20%;
+  z-index: 1000;
+}
+
+.light-menu {
+  width: 100%;
+  height: 75px;
+  background-color: rgba(255, 255, 255, 1);
+  position: fixed;
+  background-color: rgba(4, 180, 49, 0.6);
+}
+
+#menu-center {
+  width: 100%;
+  height: 75px;
+}
+#menu-center ul {
+  margin: auto;
+}
+#menu-center ul li {
+  width: 100%;
+  list-style: none;
+  text-align: center;
+}
+
+.active {
+  font-size: 14px;
+  color: #fff;
+  text-decoration: none;
+  line-height: 50px;
+}
+
+a {
+  font-size: 14px;
+  color: #969696;
+  text-decoration: none;
+  line-height: 50px;
+}
 
 .container{
 	/*isplay: grid;
@@ -49,6 +97,7 @@ body{
 	padding: 35px;
 
 }
+
 
 .container h1,h2{
 	text-align: center;
@@ -63,7 +112,7 @@ body{
 }
 
 
-.profile-content, hr{
+.profile-content{
 	display: grid;
 	grid-template-columns:repeat(auto-fill, minmax(220px, 1fr));
  	grid-gap: 10px;
@@ -81,7 +130,7 @@ body{
 }
 
 .checked {
-	color: #738e6f;
+	color: #3D7977;
 }
 
 ul {
@@ -111,6 +160,16 @@ li {
 
 .contact-info ul li a{
 	display: block;
+}
+
+body>div:nth-child(even){
+	background-color: #16180F;
+	color: white;
+}
+
+body>div:nth-child(odd){
+	background-color: #16353F;
+	color: white;
 }
 
 @media screen and (max-width: 965px){
