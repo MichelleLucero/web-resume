@@ -12,13 +12,14 @@
   });
   console.log(sections);
   window.onscroll = function() {
-    var scrollPosition = document.documentElement.scrollTop;  // current scroll position
+    var scrollPosition = document.body.scrollTop;  // current scroll position
     for (i in sections) {
       // if a section's position is less than or equal to the current position (8 is a buffer)...
+      console.log("sections[i]: " + sections[i]);
+      console.log("scrollPosition" + scrollPosition);
+
       if ((sections[i] - 8) <= scrollPosition) {
-        console.log("44 here!!!!");
         // ... then add the class to the matching menu item.
-        console.log("sections: " + i);
         document.querySelector('.active').setAttribute('class', ' ');
         document.querySelector('a[href*=' + i + ']').setAttribute('class', 'active');
       }

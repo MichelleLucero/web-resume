@@ -172,6 +172,62 @@ body>div:nth-child(odd){
 	color: white;
 }
 
+/*contact-section*/
+#contact {
+	box-sizing: border-box;
+}
+
+.inner-width {
+	max-width: 600px;
+	margin: auto;
+	padding: 0 20px;
+
+}
+
+.name,.email,.message {
+	background: none;
+	border: none;
+	outline: none;
+	border-bottom: 1px solid;
+	color: #888;
+	padding: 10px 6px;
+	font-size: 14px;
+	margin-bottom: 40px;
+}
+
+.name {
+	float: left;
+	width: 270px;
+}
+
+.email {
+	float: right;
+	width: 270px;
+}
+
+.message {
+	min-width: 100%;
+	max-width: 100%;
+
+}
+
+.inner-width button {
+	background: none;
+	color: #70a1ff;
+	border: 1px solid #70a1ff;
+	padding: 12px 40px;
+	border-radius: 8px;
+	font-size: 14px;
+	transition: 0.4s linear;
+	cursor: pointer;
+
+}
+
+.inner-width button:hover {
+	background: #70a1ff;
+	color: #fff;
+}
+
 @media screen and (max-width: 965px){
 
 /*.profile{
@@ -185,5 +241,8 @@ body>div:nth-child(odd){
 }
 
 
-
+@media screen and (max-width: 600px)
+	.name,.email {
+		width: 100%;
+	}
 }
