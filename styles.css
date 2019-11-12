@@ -92,7 +92,9 @@ a {
 	position: relative;
 	margin: auto;
 	width: 100%;
-	max-width: 810px;
+/*	max-width: 810px;*/
+	max-width: 58%;
+	min-width: 58%
 	box-sizing: border-box;
 	padding: 35px;
 
@@ -114,7 +116,7 @@ a {
 
 .profile-content{
 	display: grid;
-	grid-template-columns:repeat(auto-fill, minmax(220px, 1fr));
+	grid-template-columns:repeat(auto-fill, minmax(30%, 1fr));
  	grid-gap: 10px;
 }
 
@@ -177,12 +179,12 @@ body>div:nth-child(odd){
 	box-sizing: border-box;
 }
 
-.inner-width {
+/*.inner-width {
 	max-width: 600px;
 	margin: auto;
 	padding: 0 20px;
 
-}
+}*/
 
 .name,.email,.message {
 	background: none;
@@ -197,12 +199,12 @@ body>div:nth-child(odd){
 
 .name {
 	float: left;
-	width: 270px;
+	width: 48%;
 }
 
 .email {
 	float: right;
-	width: 270px;
+	width: 48%;
 }
 
 .message {
@@ -220,6 +222,9 @@ body>div:nth-child(odd){
 	font-size: 14px;
 	transition: 0.4s linear;
 	cursor: pointer;
+	display: block;
+	margin: auto;
+	
 
 }
 
@@ -240,9 +245,7 @@ body>div:nth-child(odd){
 	justify-content: center;
 }
 
+@media screen and (max-width: 711px){
+	/*navBar modify*/
 
-@media screen and (max-width: 600px)
-	.name,.email {
-		width: 100%;
-	}
 }
