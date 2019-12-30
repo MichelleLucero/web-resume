@@ -4,7 +4,7 @@
   var section = document.querySelectorAll(".section");
   var sections = {};
   var i = 0;
-  
+
   // places the distance from the top of the page for each section in an array
   Array.prototype.forEach.call(section, function(e) {
     sections[e.id] = e.offsetTop;
@@ -34,3 +34,13 @@ const navbarLinks = document.getElementsByClassName('navbar-links')[0]
 toggleButton.addEventListener('click', () => {
   navbarLinks.classList.toggle('active')
 })
+
+// navbar version 2
+// function myFunction() {
+//   var x = document.getElementById("navBarLinks");
+//   if (x.className === "navbar-links") {
+//     x.className += " responsive";
+//   } else {
+//     x.className = "navbar-links";
+//   }
+// }
