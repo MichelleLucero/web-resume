@@ -20,8 +20,8 @@
 
       if ((sections[i] - 8) <= scrollPosition) {
         // ... then add the class to the matching menu item.
-        document.querySelector('.active').setAttribute('class', ' ');
-        document.querySelector('a[href*=' + i + ']').setAttribute('class', 'active');
+        document.querySelector('.highlight').setAttribute('class', ' ');
+        document.querySelector('a[href*=' + i + ']').setAttribute('class', 'highlight');
       }
     }
   };
@@ -35,12 +35,7 @@ toggleButton.addEventListener('click', () => {
   navbarLinks.classList.toggle('active')
 })
 
-// navbar version 2
-// function myFunction() {
-//   var x = document.getElementById("navBarLinks");
-//   if (x.className === "navbar-links") {
-//     x.className += " responsive";
-//   } else {
-//     x.className = "navbar-links";
-//   }
-// }
+function toggle_menu(){
+  const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+  navbarLinks.classList.toggle('active')
+}
