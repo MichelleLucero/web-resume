@@ -39,3 +39,7 @@ function toggle_menu(){
   const navbarLinks = document.getElementsByClassName('navbar-links')[0]
   navbarLinks.classList.toggle('active')
 }
+
+document.getElementsById("toggleMenu").onclick=function(){
+  toggle_menu();
+}
