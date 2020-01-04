@@ -40,6 +40,6 @@ function toggle_menu(){
   navbarLinks.classList.toggle('active')
 }
 
-document.getElementsById("toggleMenu").onclick=function(){
+document.getElementById("toggleMenu").onclick=function(){
   toggle_menu();
 }
